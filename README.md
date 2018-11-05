@@ -33,8 +33,8 @@ I use this to populate my [Grafana](https://grafana.org) dashboard with Cloudfla
 ```
 CREATE USER grafanaread WITH ENCRYPTED PASSWORD '<grafana read-only pw>';
 GRANT USAGE ON SCHEMA public to grafanaread;
-ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO grafanareader;
-GRANT SELECT ON cf_api TO grafanareader;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO grafanaread;
+GRANT SELECT ON cf_api TO grafanaread;
 ```
 
 ## Grafana dashboard panel
